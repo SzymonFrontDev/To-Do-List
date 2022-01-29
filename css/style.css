@@ -68,7 +68,7 @@
     padding: 40px 20px 20px 20px;
 }
 
-.list__item--done {
+.list__item {
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 10px;
