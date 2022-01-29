@@ -1,0 +1,90 @@
+.html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, ::after ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: rgb(233, 231, 231);
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+.list__item--done {
+    text-decoration: line-through;
+}
+
+.section {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 10px;
+
+}
+
+.form {
+    border: 1px solid rgb(209, 209, 209);
+    background-color: white;
+}
+
+.header {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.form__newTask {
+    margin-bottom: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 690px;
+    width: 100%;
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.form__button {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+}
+
+.container {
+    background-color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    border: 1px solid rgb(209, 209, 209);
+    background-color: white;
+    width: 100%;
+}
+
+.task__list {
+    list-style: none;
+    padding: 5px;
+    padding: 40px 20px 20px 20px;
+}
+
+.list__item--done {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.list__button--done {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.button__removeTask {
+    background-color: crimson;
+}
