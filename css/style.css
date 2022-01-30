@@ -24,13 +24,19 @@
     border: 1px solid rgb(209, 209, 209);
     background-color: white;
     display: grid;
-
 }
+
 
 .form {
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 15px;
+}
+
+@media(max-width:767px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
 }
 
 .header {
@@ -40,20 +46,28 @@
 }
 
 .form__newTask {
-    padding:10px;
+    padding: 10px;
     margin-left: 20px;
     border: 1px solid rgb(209, 209, 209);
-    align-self:center;
-    margin-bottom:10px;
+    align-self: center;
+    margin-bottom: 10px;
 }
 
 .form__button {
     background-color: teal;
     color: white;
-    border: none; 
-    align-self:center;
-    padding:10px;
-    margin-bottom:10px;
+    border: none;
+    align-self: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form__button:hover {
+    background-color: rgb(2, 150, 150);
+}
+
+.form__button:active {
+    background-color: rgb(2, 173, 173);
 }
 
 .container {
@@ -87,6 +101,23 @@
     border: none;
 }
 
+.list__button--done:hover{
+    background-color: rgb(1, 151, 1);
+}
+
+.list__button--done:active{
+    background-color: rgb(2, 179, 2);
+}
+
 .button__removeTask {
     background-color: crimson;
+    color:white;
+}
+
+.button__removeTask:hover{
+    background-color: rgb(230, 36, 74);
+}
+
+.button__removeTask:active{
+    background-color: rgb(243, 55, 93);
 }
