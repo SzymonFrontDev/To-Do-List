@@ -13,7 +13,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.list__item--done {
+.js-item--done {
     text-decoration: line-through;
 }
 
@@ -21,12 +21,16 @@
     margin: 0 auto;
     max-width: 900px;
     padding: 10px;
+    border: 1px solid rgb(209, 209, 209);
+    background-color: white;
+    display: grid;
 
 }
 
 .form {
-    border: 1px solid rgb(209, 209, 209);
-    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 15px;
 }
 
 .header {
@@ -36,29 +40,26 @@
 }
 
 .form__newTask {
-    margin-bottom: 30px;
-    padding: 10px;
-    margin-top: 10px;
+    padding:10px;
     margin-left: 20px;
-    max-width: 690px;
-    width: 100%;
     border: 1px solid rgb(209, 209, 209);
+    align-self:center;
+    margin-bottom:10px;
 }
 
 .form__button {
-    padding: 10px;
-    margin-left: 20px;
     background-color: teal;
     color: white;
-    border: none;
+    border: none; 
+    align-self:center;
+    padding:10px;
+    margin-bottom:10px;
 }
 
 .container {
-    background-color: white;
     margin: 0 auto;
     max-width: 900px;
-    border: 1px solid rgb(209, 209, 209);
-    background-color: white;
+    border: none;
     width: 100%;
 }
 
@@ -72,6 +73,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-column-gap: 10px;
+    align-items: center;
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
