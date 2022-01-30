@@ -7,6 +7,7 @@
             content: newTaskContent,
         });
         render();
+        clearInput();
     };
     const removeTask = (taskIndex) => {
         tasks.splice(taskIndex, 1);
@@ -17,6 +18,20 @@
         tasks[taskIndex].done = !tasks[taskIndex].done;
         render();
     }
+
+    const focusOnInput = () => {
+        document.querySelector(".js-newTask").focus();
+    };
+
+    const onFormFocus = () => {
+        const button = document.querySelector(".js-formButton");
+
+        button.addEventListener("click", focusOnInput);
+    };
+
+    const clearInput = () => {
+        document.querySelector(".js-newTask").value = "";
+    };
 
     const bindEvents = () => {
 
@@ -46,11 +61,11 @@
             class= "list__item${task.done ? " list__item--done" : ""}"
             >
             <button class="ja-taskToggeDone list__button--done" >
-           ${task.done ? "✔": ""}
+           ${task.done ? "✔" : ""}
            </button>
            <span class="${task.done ? "js-item--done" : ""}">
            ${task.content}</span>
-            <button class="js-remove button__removeTask">🗑️</button>
+            <button class="js-remove button__removeTask">🗑</button>
             </li>
             `;
         };
@@ -73,7 +88,7 @@
 
     const init = () => {
         render();
-
+        onFormFocus();
         const form = document.querySelector(".js-form");
 
         form.addEventListener("submit", onFormSubmit);
