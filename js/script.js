@@ -46,7 +46,7 @@
             class= "list__item${task.done ? " list__item--done" : ""}"
             >
             <button class="ja-taskToggeDone list__button--done" >
-           ${task.done ? "&#10004": ""}
+           ${task.done ? "✔": ""}
            </button>
            <span class="${task.done ? "js-item--done" : ""}">
            ${task.content}</span>
