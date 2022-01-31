@@ -63,7 +63,7 @@
             <button class="ja-taskToggeDone list__button--done" >
            ${task.done ? "✔" : ""}
            </button>
-           <span class="${task.done ? "js-item--done" : ""}">
+           <span class="${task.done ? "js-item--done  task--done" : ""}">
            ${task.content}</span>
             <button class="js-remove button__removeTask">🗑</button>
             </li>
