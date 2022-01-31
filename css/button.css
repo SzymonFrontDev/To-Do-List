@@ -1,0 +1,12 @@
+.button__removeTask {
+    background-color: crimson;
+    color:white;
+}
+
+.button__removeTask:hover{
+    background-color: rgb(230, 36, 74);
+}
+
+.button__removeTask:active{
+    background-color: rgb(243, 55, 93);
+}

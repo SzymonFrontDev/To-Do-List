@@ -1,0 +1,25 @@
+.list__item {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-column-gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+.list__button--done {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+
+.list__button--done:hover{
+    background-color: rgb(1, 151, 1);
+}
+
+.list__button--done:active{
+    background-color: rgb(2, 179, 2);
+}
