@@ -10,5 +10,6 @@
 .body {
     background-color: rgb(233, 231, 231);
     margin: auto;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    word-break:break-word;
 }
