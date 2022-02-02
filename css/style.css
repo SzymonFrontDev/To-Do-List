@@ -9,7 +9,7 @@
 
 .body {
     background-color: rgb(233, 231, 231);
-    margin: auto;
+    margin: 15px;
     font-family: 'Montserrat', sans-serif;
     word-break:break-word;
 }
