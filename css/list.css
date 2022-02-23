@@ -10,16 +10,21 @@
 .list__button--done {
     width: 30px;
     height: 30px;
-    padding:0;
-    background-color: green;
+    padding: 0;
+    background-color: hsl(120, 100%, 25%);
     color: white;
     border: none;
+    transition: 1s;
 }
 
-.list__button--done:hover{
-    background-color: rgb(1, 151, 1);
+.list__button--done:hover {
+    background-color: hsl(120, 99%, 30%);
 }
 
-.list__button--done:active{
-    background-color: rgb(2, 179, 2);
+.list__button--done:active {
+    background-color: hsl(120, 98%, 35%);
+}
+
+.list__item--done{
+    display: none;
 }
