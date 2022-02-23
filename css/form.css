@@ -17,16 +17,18 @@
 }
 
 .form__button {
-    background-color: teal;
+    background-color: hsl(180, 100%, 25%);
     color: white;
     border: none;
     align-self: center;
     padding: 10px;
     margin-bottom: 10px;
+    transition: 1s;
 }
 
 .form__button:hover {
     background-color: rgb(2, 150, 150);
+    transform: scale(1.1);
 }
 
 .form__button:active {
