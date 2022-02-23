@@ -1,16 +1,17 @@
 .button__removeTask {
-    background-color: crimson;
-    color:white;
+    background-color: hsl(348, 83%, 47%);
+    color: white;
     width: 30px;
     height: 30px;
-    padding:0;
-    border:none;
+    padding: 0;
+    border: none;
+    transition: 1s;
 }
 
-.button__removeTask:hover{
-    background-color: rgb(230, 36, 74);
+.button__removeTask:hover {
+    background-color: hsl(348, 80%, 57%);
 }
 
-.button__removeTask:active{
-    background-color: rgb(243, 55, 93);
+.button__removeTask:active {
+    background-color: hsl(348, 89%, 67%);
 }
