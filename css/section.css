@@ -4,10 +4,12 @@
     border: 1px solid rgb(209, 209, 209);
     background-color: white;
 }
- .section__buttons{
+
+.section__button {
     background: none;
     border: none;
     color: teal;
+    font-size: 18px;
     margin: 0 5px;
     transition: 0.5s;
- }
+}
