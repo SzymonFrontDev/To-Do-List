@@ -21,3 +21,8 @@
 .section__button:active {
     color: hsl(180, 60%, 45%);
 }
+
+
+.section__button:disabled {
+    color: hsl(0, 0%, 80%);
+}
