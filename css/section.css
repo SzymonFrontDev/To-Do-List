@@ -8,8 +8,16 @@
 .section__button {
     background: none;
     border: none;
-    color: teal;
+    color: hsl(180, 100%, 25%);
     font-size: 18px;
     margin: 0 5px;
     transition: 0.5s;
+}
+
+.section__button:hover {
+    color: hsl(180, 80%, 35%);
+}
+
+.section__button:active {
+    color: hsl(180, 60%, 45%);
 }
