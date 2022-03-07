@@ -5,7 +5,7 @@
     height: 30px;
     padding: 0;
     border: none;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .button__removeTask:hover {
@@ -14,4 +14,4 @@
 
 .button__removeTask:active {
     background-color: hsl(348, 89%, 67%);
-}
+};
