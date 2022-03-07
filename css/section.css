@@ -12,6 +12,15 @@
     font-size: 18px;
     margin: 0 5px;
     transition: 0.5s;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    .section__button{
+        flex-basis: 100%;
+        margin: 10px;
+    }
 }
 
 .section__button:hover {
@@ -25,4 +34,9 @@
 
 .section__button:disabled {
     color: hsl(0, 0%, 80%);
+}
+
+.section__buttons{
+    display: flex;
+    flex-wrap: wrap;
 }
